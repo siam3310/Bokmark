@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Generator for my website - Bokmark</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        #result {
+            width: 100%;
+            margin-top: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .copy-btn {
+            background-color: #2196F3;
+        }
+
+        .copy-btn:hover {
+            background-color: #1976D2;
+        }
+
+        /* Popup styles */
+        #popup {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+            z-index: 1000;
+        }
+
+        #popup.show {
+            opacity: 1;
+            visibility: visible;
+            top: 30px;
+        }
+
+        #popup.error {
+            background-color: #f44336;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center; color: #333;">JSON Generator</h2>
+        
+        <div class="form-group">
+            <label for="name">Website's Name:</label>
+            <input type="text" id="name" placeholder="Enter Name">
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <input type="text" id="description" placeholder="Enter Description">
+        </div>
+
+        <div class="form-group">
+            <label for="category">Category:</label>
+            <input type="text" id="category" placeholder="Enter Category">
+        </div>
+
+        <div class="form-group">
+            <label for="url">Website's URL:</label>
+            <input type="url" id="url" placeholder="Enter URL">
+        </div>
+
+        <div class="form-group">
+            <label for="thumb">Website's Thumbnail:</label>
+            <input type="text" id="thumb" placeholder="Enter Thumbnail Path">
+        </div>
+
+        <button class="btn" onclick="generateJSON()">Generate JSON</button>
+        <button class="btn copy-btn" onclick="copyJSON()">Copy JSON</button>
+
+        <textarea id="result" readonly placeholder="Generated JSON will appear here..."></textarea>
+    </div>
+
+    <!-- Popup Message -->
+    <div id="popup"></div>
+
+    <script>
+        function showPopup(message, isError = false) {
+            const popup = document.getElementById('popup');
+            popup.textContent = message;
+            popup.classList.remove('error');
+            
+            if (isError) {
+                popup.classList.add('error');
+            }
+            
+            popup.classList.add('show');
+            
+            // Automatically hide popup after 3 seconds
+            setTimeout(() => {
+                popup.classList.remove('show');
+            }, 3000);
+        }
+
+        function generateJSON() {
+            // Get input values
+            const name = document.getElementById('name').value;
+            const description = document.getElementById('description').value;
+            const category = document.getElementById('category').value;
+            const url = document.getElementById('url').value;
+            const thumb = document.getElementById('thumb').value;
+
+            // Create JSON object
+            const jsonObject = {
+                "Name": name || "Token v1",
+                "Description": description || "Client-side password generation tool, Strong Passwords for Everything.",
+                "Category": category || "Security",
+                "URL": url || "https://token-v1.vercel.app/",
+                "Thumb": thumb || "static/token-v1.jpg"
+            };
+
+            // Convert to formatted JSON string
+            const jsonString = JSON.stringify(jsonObject, null, 4);
+
+            // Display in textarea
+            document.getElementById('result').value = jsonString;
+        }
+
+        function copyJSON() {
+            const resultArea = document.getElementById('result');
+            
+            // Check if there's any text to copy
+            if (!resultArea.value.trim()) {
+                showPopup('No JSON to copy!', true);
+                return;
+            }
+
+            // Select the text
+            resultArea.select();
+            resultArea.setSelectionRange(0, 99999); // For mobile devices
+
+            // Copy to clipboard
+            navigator.clipboard.writeText(resultArea.value).then(() => {
+                showPopup('JSON Copied Successfully!');
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+                showPopup('Failed to copy JSON', true);
+            });
+        }
+
+        // Optional: Add default generation on page load
+        window.onload = generateJSON;
+    </script>
+</body>
+</html>

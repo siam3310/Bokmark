@@ -215,5 +215,12 @@
         "Category" : "Security",
         "URL" : "https://token-v1.vercel.app/",
         "Thumb" : "static/token-v1.jpg"
-    }
+    },
+    {
+    "Name": "Altogether 007 ",
+    "Description": "watch live tv channels from many kinds of services fo free.",
+    "Category": "Live tv",
+    "URL": "https://altogether-007.vercel.app/",
+    "Thumb": "https://upload-cloudfalre-r2-assets.omrecipes.dev/altogether-007-vercel-app-1024x768desktop-cfbaa9.png"
+}
 ]

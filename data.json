@@ -1,5 +1,221 @@
 [
-
+    {
+        "Name" : "Mail.tm",
+        "Description" : "Free to use temporary email to register on dubious sites.",
+        "Category" : "Featured",
+        "URL" : "https://mail.tm/",
+        "Thumb" : "static/mail-tm.jpg"
+    },
+    {
+        "Name" : "Ray.so",
+        "Description" : "Create beautiful images of your code, customize it, and share it.",
+        "Category" : "Design",
+        "URL" : "https://ray.so/",
+        "Thumb" : "static/ray_so.jpg"
+    },
+    {
+        "Name" : "MicroAquire",
+        "Description" : "Buy and sell SaaS startups in as little as 90 days.",
+        "Category" : "Marketing",
+        "URL" : "https://acquire.com/",
+        "Thumb" : "static/aquire.jpg"
+    },
+    {
+        "Name" : "Radix Icons",
+        "Description" : "A crisp set of 15×15 icons designed by the WorkOS team.",
+        "Category" : "Icons",
+        "URL" : "https://www.radix-ui.com/icons",
+        "Thumb" : "static/radix.jpg"
+    },
+    {
+        "Name" : "Snoopie",
+        "Description" : "Spy on Shopify stores and monitor price and product changes.",
+        "Category" : "Marketing",
+        "URL" : "https://snoopie.live/",
+        "Thumb" : "static/snoopie.jpg"
+    },
+    {
+        "Name" : "Peekalink",
+        "Description" : "The most advanced and reliable link preview service for developers.",
+        "Category" : "APIs",
+        "URL" : "https://peekalink.io/",
+        "Thumb" : "static/peekalink.jpg"
+    },
+    {
+        "Name" : "Vzy Icons",
+        "Description" : "Beautiful SVG icons to enhance your apps and websites.",
+        "Category" : "Icons",
+        "URL" : "https://icons.vzy.co/",
+        "Thumb" : "static/vzy.jpg"
+    },
+    {
+        "Name" : "Tailwind Css",
+        "Description" : "Tailwind CSS is a utility-first CSS framework.",
+        "Category" : "Design",
+        "URL" : "https://tailwindcss.com/",
+        "Thumb" : "static/tailwind.jpg"
+    },
+    {
+        "Name" : "Testimonial",
+        "Description" : "Collect and display video testimonials, in minutes",
+        "Category" : "Marketing",
+        "URL" : "https://testimonial.to/",
+        "Thumb" : "static/testimonal.jpg"
+    },
+    {
+        "Name" : "Framer",
+        "Description" : "Design and publish modern sites at any scale.",
+        "Category" : "Design",
+        "URL" : "https://www.framer.com/",
+        "Thumb" : "static/framer.jpg"
+    },
+    {
+        "Name" : "Open Peeps",
+        "Description" : "hand-drawn illustration library to create scenes of people.",
+        "Category" : "Illustration",
+        "URL" : "https://www.openpeeps.com/",
+        "Thumb" : "static/open_peeps.jpg"
+    },
+    {
+        "Name" : "Shadcn UI",
+        "Description" : "Beautiful components that you can copy and paste into your apps.",
+        "Category" : "Design",
+        "URL" : "https://ui.shadcn.com/",
+        "Thumb" : "static/shadcn.jpg"
+    },
+    {
+        "Name" : "Daisy UI",
+        "Description" : "Free UI components library for Tailwind CSS",
+        "Category" : "Design",
+        "URL" : "https://daisyui.com/",
+        "Thumb" : "static/daisy.jpg"
+    },
+    {
+        "Name" : "Annas Archive",
+        "Description" : "The world’s largest open-source open-data library",
+        "Category" : "Featured",
+        "URL" : "https://annas-archive.org/",
+        "Thumb" : "static/annas-archive.jpg"
+    },
+    {
+        "Name" : "Ollama",
+        "Description" : "Get up and running with large language models.",
+        "Category" : "Software",
+        "URL" : "https://ollama.com/",
+        "Thumb" : "static/ollama.jpg"
+    },
+    {
+        "Name" : "Draw.io",
+        "Description" : "draw.io is a free online diagramming application and flowchart maker",
+        "Category" : "Design",
+        "URL" : "https://draw.io/",
+        "Thumb" : "static/draw-io.jpg"
+    },
+    {
+        "Name" : "Ninite",
+        "Description" : "The easiest, fastest way to update or install software.",
+        "Category" : "Software",
+        "URL" : "https://ninite.com/",
+        "Thumb" : "static/ninite.jpg"
+    },
+    {
+        "Name" : "Kiddle",
+        "Description" : "Safe search engine for kids, offering a safe web, image, and video search.",
+        "Category" : "Search_Engine",
+        "URL" : "https://www.kiddle.co/",
+        "Thumb" : "static/kiddle.jpg"
+    },
+    {
+        "Name" : "Openverse",
+        "Description" : "Search free and openly licensed media types for reuse and remixing",
+        "Category" : "Search_Engine",
+        "URL" : "https://openverse.org/",
+        "Thumb" : "static/openverse.jpg"
+    },
+    {
+        "Name" : "PDF.ai",
+        "Description" : "Chat with any PDF: ask questions, get summaries, find anything you need!",
+        "Category" : "AI",
+        "URL" : "https://pdf.ai/",
+        "Thumb" : "static/pdf-ai.jpg"
+    },
+    {
+        "Name" : "IPify",
+        "Description" : "Simple public IP address API that can integrate into any application.",
+        "Category" : "APIs",
+        "URL" : "https://www.ipify.org/",
+        "Thumb" : "static/ipify.jpg"
+    },
+    {
+        "Name" : "Roadmap",
+        "Description" : "Roadmaps, Articles and Guides for developers to grow in their career.",
+        "Category" : "Featured",
+        "URL" : "https://roadmap.sh/",
+        "Thumb" : "static/roadmap.jpg"
+    },
+    {
+        "Name" : "Heroicons",
+        "Description" : "Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.",
+        "Category" : "Icons",
+        "URL" : "https://heroicons.com/",
+        "Thumb" : "static/hero-icons.jpg"
+    },
+    {
+        "Name" : "Lucide",
+        "Description" : "Beautiful & consistent icon toolkit made by the community.",
+        "Category" : "Icons",
+        "URL" : "https://lucide.dev/icons/",
+        "Thumb" : "static/lucide.jpg"
+    },
+    {
+        "Name" : "Lummi",
+        "Description" : "Browse our collection of unique, royalty-free AI stock photos.",
+        "Category" : "Design",
+        "URL" : "https://www.lummi.ai/",
+        "Thumb" : "static/lummi.png"
+    },
+    {
+        "Name" : "UIdesign",
+        "Description" : "Learn UI & UX Design with practical byte-sized tips and in-depth articles.",
+        "Category" : "Design",
+        "URL" : "https://www.uidesign.tips/",
+        "Thumb" : "static/uidesign.jpg"
+    },
+    {
+        "Name" : "Mockuphone",
+        "Description" : "tool that helps you wrap app screenshots in different devices.",
+        "Category" : "Design",
+        "URL" : "https://mockuphone.com/",
+        "Thumb" : "static/mockuphone.jpg"
+    },
+    {
+        "Name" : "Stackedit",
+        "Description" : "Full-featured, open-source Markdown editor based on PageDown.",
+        "Category" : "Editor",
+        "URL" : "https://stackedit.io/",
+        "Thumb" : "static/stackedit.jpg"
+    },
+    {
+        "Name" : "Mockey",
+        "Description" : "Create free Mockups online with Mockey AI Mockup Generator.",
+        "Category" : "Design",
+        "URL" : "https://mockey.ai/",
+        "Thumb" : "static/mockey.jpg"
+    },
+    {
+        "Name" : "Arc",
+        "Description" : "Experience a calmer, more personal internet in this browser.",
+        "Category" : "Browser",
+        "URL" : "https://arc.net/",
+        "Thumb" : "static/og.png"
+    },
+    {
+        "Name" : "Token v1",
+        "Description" : "Client-side password generation tool, Strong Passwords for Everything.",
+        "Category" : "Security",
+        "URL" : "https://token-v1.vercel.app/",
+        "Thumb" : "static/token-v1.jpg"
+    },
     {
     "Name" : "Altogether-007  ",
     "Description": "Watch live tv channels from many kinds of services for free.",

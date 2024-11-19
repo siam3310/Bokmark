@@ -1,4 +1,11 @@
 [
+        {
+    "Name" : "Altogether-007 2.O ",
+    "Description": "Watch live tv channels from many kinds of services for free.",
+    "Category" : "Live_tv_2",
+    "URL" : "https://altogether-007.vercel.app",
+    "Thumb" : "static/altogether-007.png"
+    },
     {
         "Name" : "Mail.tm",
         "Description" : "Free to use temporary email to register on dubious sites.",
